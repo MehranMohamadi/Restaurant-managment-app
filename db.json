@@ -11,6 +11,18 @@
       "email": "mohsen@gmail",
       "password": "1234",
       "id": 2
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "mehran1378",
+      "name": "mehran",
+      "id": 3
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "mehran1378",
+      "name": "mehran",
+      "id": 4
     }
   ]
 }
