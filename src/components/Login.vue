@@ -1,12 +1,12 @@
 <template>
     <img class="logo" src="../assets/canva-yellow-healthy-restaurant-logo-__6luq53u1w.jpg" alt="n">
-    <h1>signup</h1>
-    <div class="register">
-        <input type="text" v-model="name" placeholder="enter name">
+    <h1>lOGIN</h1>
+    <div class="login">
+
         <input type="text" v-model="email" placeholder="enter email">
         <input type="password" v-model="password" placeholder="enter password">
-        <button v-on:click="signUp">Sign up</button>
-        <P><router-link to="/login">Login</router-link></P>
+        <button>Login</button>
+        <P><router-link to="/sign-up">SIGN UP</router-link></P>
     </div>
 </template>
 
