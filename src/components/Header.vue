@@ -1,24 +1,31 @@
 <template>
     <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Add Food</a>
-        <a href="#">Update Food</a>
-        <a href="#">Logout</a>
+        <router-link to="/">Home</router-link>
+        <router-link to="add">Add Food</router-link>
+        <router-link to="update">Update Food</router-link>
+        <a href="#" v-on:click="logout">Logout</a>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Header"
+        name: "Header",
+        methods: {
+            logout() {
+                localStorage.clear();
+                this.$router.push({name: "Login"})
+            }
+        }
     }
 </script>
 
 <style scoped>
-.nav{
-    background-color: #333;
-    overflow: hidden;
-}
-    .nav a{
+    .nav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .nav a {
         float: left;
         color: #f2f2f2f2;
         padding: 14px 16px;
@@ -26,5 +33,10 @@
         font-size: 17px;
         text-decoration: none;
         margin-right: 5px;
+    }
+
+    .nav a:hover {
+        background-color: #dddddd;
+        color: #333333;
     }
 </style>
