@@ -5,17 +5,31 @@
 
         <input type="text" v-model="email" placeholder="enter email">
         <input type="password" v-model="password" placeholder="enter password">
-        <button>Login</button>
-        <P><router-link to="/sign-up">SIGN UP</router-link></P>
+        <button v-on:click="login">Login</button>
+        <P>
+            <router-link to="/sign-up">SIGN UP</router-link>
+        </P>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Login"
+        name: "Login",
+        data() {
+            return {
+                email: '',
+                password: ''
+            }
+        }
+        ,
+        methods: {
+            login() {
+                console.log(this.email, this.password)
+            }
+        }
     }
 </script>
 
-<style scoped>
+<style>
 
 </style>
