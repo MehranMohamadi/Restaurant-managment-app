@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+    import axios from 'axios'
 
     export default {
         name: "Login",
@@ -28,11 +28,17 @@ import axios from 'axios'
             async login() {
                 let result = await axios.get(`http://localhost:3000/user?email=${this.email}&password=${this.password}`)
 
-                if (result.status==200 && result.data.length>0){
-                    localStorage.setItem("user-info",JSON.stringify((result.data[0])))
-                    this.$router.push({name:'Home'})
+                if (result.status == 200 && result.data.length > 0) {
+                    localStorage.setItem("user-info", JSON.stringify((result.data[0])))
+                    this.$router.push({name: 'Home'})
                 }
                 console.warn(result)
+            }
+        },
+        mounted() {
+            let user = localStorage.getItem('user-info');
+            if (user) {
+                this.$router.push({name: 'Home'})
             }
         }
 
