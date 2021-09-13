@@ -7,40 +7,10 @@
       "id": 1
     },
     {
-      "name": "mohsen",
-      "email": "mohsen@gmail",
-      "password": "1234",
+      "email": "peter@test.com",
+      "password": "peter123",
+      "name": "peter",
       "id": 2
-    },
-    {
-      "email": "ali@gmail.com",
-      "password": "mehran1378",
-      "name": "mehran",
-      "id": 3
-    },
-    {
-      "email": "ali@gmail.com",
-      "password": "mehran1378",
-      "name": "mehran",
-      "id": 4
-    },
-    {
-      "email": "ali@gmail.com",
-      "password": "mehran1378",
-      "name": "ali ",
-      "id": 5
-    },
-    {
-      "email": "sara@gmail.com",
-      "password": "mehranwww",
-      "name": "sara",
-      "id": 6
-    },
-    {
-      "email": "sdf@fdsfsdf",
-      "password": "sdf",
-      "name": "dfs",
-      "id": 7
     }
   ]
 }
