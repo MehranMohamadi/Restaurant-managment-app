@@ -1,28 +1,30 @@
 {
   "user": [
     {
-      "name": "mehran",
-      "email": "mehran@gmail",
-      "password": "abc",
-      "id": 1
-    },
-    {
       "email": "peter@test.com",
       "password": "peter123",
       "name": "peter",
       "id": 2
+    }
+  ],
+  "food": [
+    {
+      "id": 1,
+      "name": "pizza",
+      "rate": 87,
+      "price": "122t"
     },
     {
-      "email": "fdsfdsfsdff",
-      "password": "sdfsdfdsfds",
-      "name": "esdf",
-      "id": 3
+      "id": 2,
+      "name": "burger",
+      "rate": 98,
+      "price": "89t"
     },
     {
-      "email": "fdsfdsfdsf",
-      "password": "dsfdsfsdfsd",
-      "name": "dfsfdsfds",
-      "id": 4
+      "id": 3,
+      "name": "hot dog",
+      "rate": 55,
+      "price": "95t"
     }
   ]
 }
