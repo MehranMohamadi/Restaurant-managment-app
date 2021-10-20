@@ -5,6 +5,12 @@
       "password": "peter123",
       "name": "peter",
       "id": 2
+    },
+    {
+      "email": "r@test.com",
+      "password": "r123",
+      "name": "r",
+      "id": 4
     }
   ],
   "food": [
@@ -25,6 +31,114 @@
       "name": "hot dog",
       "rate": 55,
       "price": "95t"
+    },
+    {
+      "name": "pizza",
+      "price": "122t",
+      "rate": "13",
+      "id": 4
+    },
+    {
+      "name": "chicken",
+      "price": "55t",
+      "rate": "87",
+      "id": 5
+    },
+    {
+      "name": "chicken",
+      "price": "55t",
+      "rate": "87",
+      "id": 6
+    },
+    {
+      "name": "kebab",
+      "price": "34t",
+      "rate": "42",
+      "id": 7
+    },
+    {
+      "name": "kebab",
+      "price": "34t",
+      "rate": "42",
+      "id": 8
+    },
+    {
+      "name": "potato",
+      "price": "24t",
+      "rate": "64",
+      "id": 9
+    },
+    {
+      "name": "sz",
+      "price": "23t",
+      "rate": "234",
+      "id": 10
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 11
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 12
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 13
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 14
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 15
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 16
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 17
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 18
+    },
+    {
+      "name": "gtd",
+      "price": "324y",
+      "rate": "23",
+      "id": 19
+    },
+    {
+      "name": "adsa",
+      "price": "24",
+      "rate": "34",
+      "id": 20
+    },
+    {
+      "name": "l",
+      "price": "111t",
+      "rate": "23",
+      "id": 21
     }
   ]
 }

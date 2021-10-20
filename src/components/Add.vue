@@ -28,13 +28,16 @@ export default {
     }
   },
   methods: {
-    addfood() {
+    async addfood() {
       console.warn(this.food);
-      const result = axios.post("http://localhost:3000/food", {
+      const result = await axios.post("http://localhost:3000/food", {
         name: this.food.name,
         price: this.food.price,
-        rate: this.food.rate
+        rate: this.food.rate,
       });
+      if (result.status == 201) {
+        this.$router.push({name: 'Home'})
+      }
       console.warn('result', result)
 
 
