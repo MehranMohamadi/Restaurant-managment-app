@@ -16,6 +16,7 @@
       <td>{{ item.rate }}</td>
       <td>
         <router-link :to="'/update/'+item.id">Update</router-link>
+        <button v-on:click="deletefood(item.id)">Delete</button>
       </td>
 
     </tr>
@@ -38,15 +39,27 @@ export default {
   components: {
     Header
   },
-  async mounted() {
-    let user = localStorage.getItem('user-info');
-    this.name = JSON.parse(user).name;
-    if (!user) {
-      this.$router.push({name: 'Signup'})
+  methods: {
+    async deletefood(id) {
+      let result = await axios.delete("http://localhost:3000/food/" + id);
+      console.warn(result)
+      if (result.status == 200) {
+        this.loadData()
+      }
+    },
+    async loadData() {
+      let user = localStorage.getItem('user-info');
+      this.name = JSON.parse(user).name;
+      if (!user) {
+        this.$router.push({name: 'Signup'})
+      }
+      let result = await axios.get("http://localhost:3000/food");
+
+      this.food = result.data;
     }
-    let result = await axios.get("http://localhost:3000/food");
-    console.warn(result)
-    this.food = result.data;
+  },
+  async mounted() {
+    await this.loadData();
   }
 }
 </script>

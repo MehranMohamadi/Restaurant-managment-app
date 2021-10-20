@@ -15,12 +15,6 @@
   ],
   "food": [
     {
-      "name": "pizza",
-      "price": "122t",
-      "rate": "8",
-      "id": 1
-    },
-    {
       "id": 2,
       "name": "burger",
       "rate": 98,
