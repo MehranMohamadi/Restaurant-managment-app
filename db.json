@@ -11,14 +11,20 @@
       "password": "r123",
       "name": "r",
       "id": 4
+    },
+    {
+      "email": "mehran@gmail.com",
+      "password": "mehran13789",
+      "name": "mehran ",
+      "id": 5
     }
   ],
   "food": [
     {
-      "id": 2,
-      "name": "burger",
+      "name": "burger king",
+      "price": "89t",
       "rate": 98,
-      "price": "89t"
+      "id": 2
     },
     {
       "id": 3,
@@ -28,7 +34,7 @@
     },
     {
       "name": "pizza",
-      "price": "122t",
+      "price": "142t",
       "rate": "13",
       "id": 4
     },
@@ -55,84 +61,6 @@
       "price": "34t",
       "rate": "42",
       "id": 8
-    },
-    {
-      "name": "potato",
-      "price": "24t",
-      "rate": "64",
-      "id": 9
-    },
-    {
-      "name": "sz",
-      "price": "23t",
-      "rate": "234",
-      "id": 10
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 11
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 12
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 13
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 14
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 15
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 16
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 17
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 18
-    },
-    {
-      "name": "gtd",
-      "price": "324y",
-      "rate": "23",
-      "id": 19
-    },
-    {
-      "name": "adsa",
-      "price": "24",
-      "rate": "34",
-      "id": 20
-    },
-    {
-      "name": "l",
-      "price": "111t",
-      "rate": "23",
-      "id": 21
     }
   ]
 }

@@ -45,7 +45,7 @@ export default {
       this.$router.push({name: 'Signup'})
     }
     const result = await axios.get('http://localhost:3000/food/' + this.$route.params.id)
-    console.warn(result.data)
+
     this.food = result.data
   }
 }

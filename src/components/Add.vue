@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     async addfood() {
-      console.warn(this.food);
+
       const result = await axios.post("http://localhost:3000/food", {
         name: this.food.name,
         price: this.food.price,
