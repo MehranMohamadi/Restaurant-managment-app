@@ -1,13 +1,12 @@
 <template>
-  <Header></Header>
-  <h1>Hello {{ name }} welcom to home page</h1>
+  <Header2></Header2>
+  <h1>خوش امدید {{ name }} سلام</h1>
   <table border="1">
     <tr>
       <td>id</td>
       <td>name</td>
       <td>price</td>
       <td>rate</td>
-      <td>Actions</td>
     </tr>
     <tr v-for="item in food" :key="item.id">
       <td>{{ item.id }}</td>
@@ -21,7 +20,7 @@
 
 <script>
 import axios from "axios"
-import Header from "./Header";
+import Header2 from "./Header2";
 
 export default {
   name: "Home",
@@ -33,7 +32,7 @@ export default {
     }
   },
   components: {
-    Header
+    Header2
   },
   methods: {
 
@@ -55,6 +54,14 @@ export default {
 </script>
 
 <style scoped>
+table{
+  border-collapse: collapse;
+}
+tr:hover{
+  background-color: #2c3e50;
+  color: wheat;
+}
+
 td {
   width: 160px;
   height: 40px;

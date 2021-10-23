@@ -4,19 +4,22 @@
       "email": "peter@test.com",
       "password": "peter123",
       "name": "peter",
+      "role": "admin",
       "id": 2
     },
     {
-      "email": "r@test.com",
-      "password": "r123",
-      "name": "r",
-      "id": 4
+      "email": "mehran@gmail.com",
+      "password": "1234",
+      "name": "mehran",
+      "role": "User",
+      "id": 3
     },
     {
-      "email": "mehran@gmail.com",
-      "password": "mehran13789",
-      "name": "mehran ",
-      "id": 5
+      "email": "sdfdsf",
+      "password": "dsfds",
+      "name": "dsfds",
+      "role": "User",
+      "id": 4
     }
   ],
   "food": [

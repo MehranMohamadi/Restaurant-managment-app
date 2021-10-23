@@ -65,6 +65,14 @@ export default {
 </script>
 
 <style scoped>
+table{
+  border-collapse: collapse;
+}
+tr:hover{
+  background-color: #2c3e50;
+  color: wheat;
+}
+
 td {
   width: 160px;
   height: 40px;

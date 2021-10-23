@@ -31,6 +31,7 @@
     body{
         margin: 0;
         padding: 0;
+      background-color: #1f2530;
     }
 
     .register input, .login input, .add input{
@@ -45,12 +46,23 @@
 
     }
 
-    .register button, .login button, .add button {
+     .add button {
         width: 320px;
         height: 40px;
         border: 1px solid skyblue;
         background-color: skyblue;
         color: #afff;
         cursor: pointer;
+    }
+    .register button ,.login button{
+      color: #1f2530;
+      background-color: #a3ee7b;
+      margin: 0;
+      border: 2px solid #96ff56;
+      text-decoration: none;
+      padding: 4px 100px 4px 100px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
     }
 </style>
