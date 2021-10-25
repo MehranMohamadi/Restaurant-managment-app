@@ -1,5 +1,5 @@
 <template>
-  <img class="logo" src="../assets/canva-yellow-healthy-restaurant-logo-__6luq53u1w.jpg" alt="n">
+  <img class="logo" src="../assets/saavi.png" alt="n">
   <h1>lOGIN</h1>
   <div class="login">
 

@@ -20,50 +20,47 @@
       "name": "dsfds",
       "role": "User",
       "id": 4
+    },
+    {
+      "email": "mehran@gmail.con",
+      "password": "1242354532856328",
+      "name": "مهران ",
+      "role": "User",
+      "id": 5
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "",
+      "role": "User",
+      "id": 7
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "123456786543",
+      "name": "علی باقریه ",
+      "role": "User",
+      "id": 8
     }
   ],
   "food": [
     {
-      "name": "burger king",
-      "price": "89t",
-      "rate": 98,
-      "id": 2
+      "name": "کباب",
+      "price": "23 تومان ",
+      "rate": "32",
+      "id": 10
     },
     {
-      "id": 3,
-      "name": "hot dog",
-      "rate": 55,
-      "price": "95t"
+      "name": "مرغ سرخ شده ",
+      "price": "43 تومان",
+      "rate": "77",
+      "id": 11
     },
     {
-      "name": "pizza",
-      "price": "142t",
-      "rate": "13",
-      "id": 4
-    },
-    {
-      "name": "chicken",
-      "price": "55t",
-      "rate": "87",
-      "id": 5
-    },
-    {
-      "name": "chicken",
-      "price": "55t",
-      "rate": "87",
-      "id": 6
-    },
-    {
-      "name": "kebab",
-      "price": "34t",
-      "rate": "42",
-      "id": 7
-    },
-    {
-      "name": "kebab",
-      "price": "34t",
-      "rate": "42",
-      "id": 8
+      "name": "شیشلیک",
+      "price": "155 تومان",
+      "rate": "99",
+      "id": 12
     }
   ]
 }
