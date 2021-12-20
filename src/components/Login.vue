@@ -1,14 +1,14 @@
 <template>
   <img class="logo" src="../assets/saavi.png" alt="n">
-  <h1>lOGIN</h1>
+  <h1>ورود</h1>
   <div class="login">
-
-    <input type="text" v-model="email" placeholder="enter email">
-    <input type="password" v-model="password" placeholder="enter password">
-    <button v-on:click="login">Login</button>
+    <input type="text" v-model="email" placeholder="ایمیل خود را وارد کنید">
+    <input type="password" v-model="password" placeholder="پسورد خود را وارد کنید">
+    <button v-on:click="login">ورود</button>
     <P>
-      <router-link to="/sign-up" style="text-decoration: none"><span id="signup-button">Sign up</span></router-link>
+      <router-link to="/sign-up" style="text-decoration: none"><span id="signup-button">ثبت نام</span></router-link>
     </P>
+
   </div>
 </template>
 

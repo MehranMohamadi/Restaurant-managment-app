@@ -1,6 +1,6 @@
 <template>
   <Header2></Header2>
-  <h1>خوش امدید {{ name }} سلام</h1>
+  <h1>سلام {{ name }} خوش اومدی</h1>
   <table border="1" class="table">
     <tr>
       <td>id</td>

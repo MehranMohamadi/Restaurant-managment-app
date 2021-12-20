@@ -1,13 +1,13 @@
 <template>
   <img class="logo" src="../assets/saavi.png" alt="n">
-  <h1>signup</h1>
+  <h1>ثبت نام</h1>
   <div class="register">
-    <input type="text" v-model="name" placeholder="enter name" >
-    <input type="text" v-model="email" placeholder="enter email" >
-    <input type="password" v-model="password" placeholder="enter password" >
-    <button v-on:click="signUp">Sign up</button>
+    <input type="text" v-model="name" placeholder="نام خود را وارد کنید" >
+    <input type="text" v-model="email" placeholder="ایمیل خود را وارد کنید " >
+    <input type="password" v-model="password" placeholder="پسورد خود را وارد کنید" >
+    <button v-on:click="signUp">ثبت نام</button>
     <P>
-      <router-link to="/login" id="Login-button">Login</router-link>
+      <router-link to="/login" id="Login-button">قبلا ثبت نام کرده ام</router-link>
     </P>
   </div>
 </template>
