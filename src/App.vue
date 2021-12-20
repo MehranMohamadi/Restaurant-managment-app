@@ -36,7 +36,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1f2530;
+  background-color: #17294d;
 
 }
 
@@ -53,7 +53,7 @@ body {
   border-radius: 10px;
   color: #dddddd;
   font-weight: bold;
-  font-family: "2  Baran",serif;
+  font-family: "2  Baran", serif;
   font-size: 20px;
   direction: rtl;
 
@@ -81,7 +81,7 @@ body {
   background-color: #6b90e5;
 }
 
-.register button ,.login button {
+.register button, .login button {
   color: #1f2530;
   background-color: #a3ee7b;
   margin: 10px;
@@ -92,30 +92,37 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
-.table{
 
-  background-color: #777777;
+.table {
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(158deg, rgba(255, 255, 255, 1) 9%, rgba(0, 74, 255, 0.5887488784576331) 100%);
   cursor: pointer;
   color: #1f2530;
   font-size: 23px;
   font-weight: bolder;
-  font-family: "2  Nazanin",sans-serif;
+  font-family: "2  Nazanin", sans-serif;
   width: 100%;
   border-collapse: collapse;
 }
-.table button{
-  color: #e8d5d5;
 
+.table button {
+  color: #e8d5d5;
   background-color: #5c7598;
-  border: 4px solid #080f38;
+  border: 4px solid rgba(8, 15, 56, 0.65);
   font-size: 20px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bolder;
-  font-family: "2  Nazanin",sans-serif;
+  font-family: "2  Nazanin", sans-serif;
 
 }
-.table button:hover{
+
+.table button:hover {
   background-color: red;
+}
+
+.title {
+  color: #6690f6;
 }
 </style>

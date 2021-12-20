@@ -1,6 +1,6 @@
 <template>
   <Header></Header>
-  <h1>Hello {{ name }} welcom to home page</h1>
+  <h1 class="title">سلام {{ name }} خوش اومدی</h1>
   <table border="1" class="table">
     <tr>
       <td>id</td>
@@ -15,7 +15,8 @@
       <td>{{ item.price }}</td>
       <td>{{ item.rate }}</td>
       <td>
-        <router-link :to="'/update/'+item.id" style="text-decoration:none "><span id="update-button">بروزرسانی</span></router-link>
+        <router-link :to="'/update/'+item.id" style="text-decoration:none "><span id="update-button">بروزرسانی</span>
+        </router-link>
         <button v-on:click="deletefood(item.id)">حذف</button>
       </td>
 
@@ -66,19 +67,23 @@ export default {
 
 <style scoped>
 
-tr:hover{
+tr:hover {
   background-color: #2c3e50;
   color: wheat;
+
 }
 
 td {
   width: 160px;
   height: 40px;
   direction: rtl;
+
+  padding: 0;
 }
-#update-button{
+
+#update-button {
   color: #e8d5d5;
-padding:0 10px 0 10px;
+  padding: 0 10px 0 10px;
   margin: 3px;
   background-color: #5c7598;
   border: 4px solid #080f38;
@@ -86,9 +91,10 @@ padding:0 10px 0 10px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bolder;
-  font-family: "2  Nazanin",sans-serif;
+  font-family: "2  Nazanin", sans-serif;
 }
-#update-button:hover{
+
+#update-button:hover {
   background-color: red;
 
 }

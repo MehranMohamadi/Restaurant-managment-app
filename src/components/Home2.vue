@@ -1,18 +1,20 @@
 <template>
   <Header2></Header2>
-  <h1>سلام {{ name }} خوش اومدی</h1>
+  <h1 class="title">سلام {{ name }} خوش اومدی</h1>
   <table border="1" class="table">
     <tr>
       <td>id</td>
-      <td>name</td>
-      <td>price</td>
-      <td>rate</td>
+      <td>نام</td>
+      <td>نمره</td>
+      <td>قیمت</td>
+
     </tr>
     <tr v-for="item in food" :key="item.id">
       <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
       <td>{{ item.price }}</td>
       <td>{{ item.rate }}</td>
+
 
     </tr>
   </table>
@@ -54,10 +56,11 @@ export default {
 </script>
 
 <style scoped>
-table{
+table {
   border-collapse: collapse;
 }
-tr:hover{
+
+tr:hover {
   background-color: #2c3e50;
   color: wheat;
 }
@@ -65,5 +68,7 @@ tr:hover{
 td {
   width: 160px;
   height: 40px;
+  padding: 0;
+  direction: rtl;
 }
 </style>

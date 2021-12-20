@@ -1,6 +1,6 @@
 <template>
   <img class="logo" src="../assets/saavi.png" alt="n">
-  <h1>ورود</h1>
+  <h1 class="title">ورود</h1>
   <div class="login">
     <input type="text" v-model="email" placeholder="ایمیل خود را وارد کنید">
     <input type="password" v-model="password" placeholder="پسورد خود را وارد کنید">
@@ -53,6 +53,8 @@ export default {
 </script>
 
 <style>
+
+
 #signup-button {
   color: #dddddd;
 

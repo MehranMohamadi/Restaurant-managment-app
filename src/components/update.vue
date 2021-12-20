@@ -1,11 +1,12 @@
 <template>
   <Header></Header>
-  <h1>Hello ,welcom to update food page</h1>
+  <h1 class="title">صفحه بروزرسانی</h1>
   <form class="add">
     <input type="text" name="name" placeholder="enter name" v-model="food.name"/>
     <input type="text" name="rate" placeholder="enter rate" v-model="food.rate"/>
     <input type="text" name="price" placeholder="enter price" v-model="food.price"/>
-    <button type="button" v-on:click="updatefood">update Food</button>
+    <button style="font-size: 20px; color: #080f38" class="title" type="button" v-on:click="updatefood">بروزرسانی
+    </button>
   </form>
 </template>
 

@@ -22,25 +22,45 @@
       "id": 4
     },
     {
-      "email": "mehran@gmail.con",
+      "email": "mehran@gmail.com",
       "password": "1242354532856328",
       "name": "مهران ",
-      "role": "User",
+      "role": "admin",
       "id": 5
     },
-
     {
       "email": "ali@gmail.com",
       "password": "123456786543",
       "name": "علی باقریه ",
       "role": "User",
       "id": 8
+    },
+    {
+      "email": "alinaseri@gmail.com",
+      "password": "1234567899",
+      "name": "علی ناصری",
+      "role": "User",
+      "id": 9
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "",
+      "role": "User",
+      "id": 10
+    },
+    {
+      "email": "",
+      "password": "",
+      "name": "",
+      "role": "User",
+      "id": 11
     }
   ],
   "food": [
     {
       "name": "کباب",
-      "price": "23 تومان ",
+      "price": "33 تومان ",
       "rate": "32",
       "id": 10
     },
@@ -55,6 +75,12 @@
       "price": "155 تومان",
       "rate": "99",
       "id": 12
+    },
+    {
+      "name": "پلو",
+      "price": "21 تومان",
+      "rate": "64",
+      "id": 13
     }
   ]
 }

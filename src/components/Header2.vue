@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-    <a href="#" v-on:click="logout">Logout</a>
+    <a href="#" v-on:click="logout">خروج</a>
   </div>
 </template>
 
@@ -18,8 +18,9 @@ export default {
 
 <style scoped>
 .nav {
-  background-color: #333;
+  background-color: rgba(124, 158, 232, 0.58);
   overflow: hidden;
+
 }
 
 .nav a {
@@ -27,7 +28,8 @@ export default {
   color: #f2f2f2f2;
   padding: 14px 16px;
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   margin-right: 5px;
 }
