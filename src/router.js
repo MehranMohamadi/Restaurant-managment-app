@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Add from "./components/Add";
 import update from "./components/update";
 import Home2 from "./components/Home2";
+import Orders from "./components/Orders";
 
 const routes = [
     {name: 'Home', component: Home, path: '/'},
@@ -13,6 +14,7 @@ const routes = [
     {name: 'Login', component: Login, path: '/login'},
     {name: 'add', component: Add, path: '/add'},
     {name: 'update', component: update, path: '/update/:id'},
+    {name: 'order', component: Orders, path: '/orders'}
 
 ];
 

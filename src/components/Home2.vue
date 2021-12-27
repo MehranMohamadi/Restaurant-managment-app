@@ -5,8 +5,9 @@
     <tr>
       <td>id</td>
       <td>نام</td>
-      <td>نمره</td>
       <td>قیمت</td>
+      <td>درصد محبوبیت</td>
+      <td>عملیات</td>
 
     </tr>
     <tr v-for="item in food" :key="item.id">
@@ -14,7 +15,9 @@
       <td>{{ item.name }}</td>
       <td>{{ item.price }}</td>
       <td>{{ item.rate }}</td>
-
+      <td>
+        <button class="order" v-on:click="order(this.name,item.name)">سفارش</button>
+      </td>
 
     </tr>
   </table>
@@ -29,6 +32,7 @@ export default {
   data() {
     return {
       name: '',
+
       food: []
 
     }
@@ -37,7 +41,27 @@ export default {
     Header2
   },
   methods: {
+    async order(user,food) {
 
+      const result = await axios.post("http://localhost:3000/order", {
+        user: user,
+        food:food
+
+      });
+      if (result.status == 201) {
+        this.$swal({
+          position: 'top',
+          icon: 'success',
+          title: 'سفارش ثبت شد',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        console.log(food)
+
+
+      }
+
+    },
     async loadData() {
       let user = localStorage.getItem('user-info');
       this.name = JSON.parse(user).name;
@@ -70,5 +94,14 @@ td {
   height: 40px;
   padding: 0;
   direction: rtl;
+}
+
+.order {
+  background-color: rgba(163, 238, 123, 0.76);
+  color: #080f38;
+}
+
+.order:hover {
+  background-color: #a6e87c;
 }
 </style>

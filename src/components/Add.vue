@@ -3,7 +3,7 @@
   <h1 class="title">یک غذا به لیست اضافه کنید</h1>
   <form class="add">
     <input type="text" name="name" placeholder="نام غذا را وارد کنید" v-model="food.name"/>
-    <input type="text" name="rate" placeholder="نمره را وارد کنید" v-model="food.rate"/>
+    <input type="text" name="rate" placeholder="درصد محبوبیت را وارد کنید" v-model="food.rate"/>
     <input type="text" name="price" placeholder="قیمت را وارد کنید" v-model="food.price"/>
     <button style="font-size: 20px; color: #080f38" type="button" v-on:click="addfood">اضافه کردن غذا</button>
   </form>
@@ -36,10 +36,16 @@ export default {
         rate: this.food.rate,
       });
       if (result.status == 201) {
-        this.$router.push({name: 'Home'})
-      }
-      console.warn('result', result)
+        this.$router.push({name: 'Home'});
+            this.$swal({
+              position: 'top',
+              icon: 'success',
+              title: 'غذا اضافه شد',
+              showConfirmButton: false,
+              timer: 1500
+            });
 
+      }
 
     }
   },

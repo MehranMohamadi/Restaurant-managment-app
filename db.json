@@ -1,36 +1,15 @@
 {
   "user": [
     {
-      "email": "peter@test.com",
-      "password": "peter123",
-      "name": "peter",
+      "email": "mehran@test.com",
+      "password": "mehran1378",
+      "name": "مهران",
       "role": "admin",
       "id": 2
     },
     {
-      "email": "mehran@gmail.com",
-      "password": "1234",
-      "name": "mehran",
-      "role": "User",
-      "id": 3
-    },
-    {
-      "email": "sdfdsf",
-      "password": "dsfds",
-      "name": "dsfds",
-      "role": "User",
-      "id": 4
-    },
-    {
-      "email": "mehran@gmail.com",
-      "password": "1242354532856328",
-      "name": "مهران ",
-      "role": "admin",
-      "id": 5
-    },
-    {
       "email": "ali@gmail.com",
-      "password": "123456786543",
+      "password": "ali12345",
       "name": "علی باقریه ",
       "role": "User",
       "id": 8
@@ -43,44 +22,98 @@
       "id": 9
     },
     {
-      "email": "",
-      "password": "",
-      "name": "",
+      "email": "omid@gmail.com",
+      "password": "omid1234",
+      "name": "امید",
       "role": "User",
-      "id": 10
-    },
-    {
-      "email": "",
-      "password": "",
-      "name": "",
-      "role": "User",
-      "id": 11
+      "id": 13
     }
   ],
   "food": [
     {
-      "name": "کباب",
-      "price": "33 تومان ",
-      "rate": "32",
-      "id": 10
+      "name": "چلو کباب برگ",
+      "price": "85 تومان",
+      "rate": "99",
+      "id": 1
+    },
+    {
+      "name": "چلو کباب بختیاری ",
+      "price": "65 تومان",
+      "rate": "77",
+      "id": 2
+    },
+    {
+      "name": "چلوکباب لقمه",
+      "price": "58 تومان",
+      "rate": "66",
+      "id": 3
+    },
+    {
+      "name": "چلو کباب کوبیده",
+      "price": "43 تومان",
+      "rate": "98",
+      "id": 4
+    },
+    {
+      "name": "چلو جوجه کباب ",
+      "price": "41 تومان",
+      "rate": "56",
+      "id": 5
     },
     {
       "name": "مرغ سرخ شده ",
-      "price": "43 تومان",
-      "rate": "77",
+      "price": "37 تومان",
+      "rate": "99",
+      "id": 6
+    },
+    {
+      "name": "چلو ماهی ",
+      "price": "80 تومان",
+      "rate": "62",
+      "id": 7
+    },
+    {
+      "name": "چلو اکبر جوجه ",
+      "price": "57 تومان",
+      "rate": "99",
+      "id": 8
+    },
+    {
+      "name": "خورشت قیمه ",
+      "price": "40 تومان",
+      "rate": "88",
+      "id": 9
+    },
+    {
+      "name": "خورشت قرمه سبزی",
+      "price": "35 تومان",
+      "rate": "100",
+      "id": 10
+    },
+    {
+      "name": "سوپ جو",
+      "price": "14 تومان",
+      "rate": "54",
       "id": 11
     },
     {
-      "name": "شیشلیک",
-      "price": "155 تومان",
-      "rate": "99",
+      "name": "نوشابه قوطی ",
+      "price": "8 تومان ",
+      "rate": "43",
       "id": 12
     },
     {
-      "name": "پلو",
-      "price": "21 تومان",
-      "rate": "64",
+      "name": "ماست یک نفره",
+      "price": "7 تومان",
+      "rate": "45",
       "id": 13
+    }
+  ],
+  "order": [
+    {
+      "user": "امید",
+      "food": "چلو کباب برگ",
+      "id": "FrdxDHS"
     }
   ]
 }

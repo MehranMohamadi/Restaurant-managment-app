@@ -3,6 +3,7 @@
 
   </router-view>
 
+  <img class="main-img-2" src="../src/assets/3675706.jpg">
 </template>
 
 <script>
@@ -36,10 +37,34 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #17294d;
+  background-color: rgba(0, 0, 0, 0.89);
+
 
 }
 
+.main-img-1 {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+  height: 40vh;
+  width: auto;
+  border-radius: 15px;
+  opacity: 0.9;
+
+}
+.main-img-2 {
+  z-index: -2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0.25;
+
+}
 .register input, .login input, .add input {
   width: 300px;
   height: 40px;
@@ -48,8 +73,8 @@ body {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  background-color: rgba(15, 22, 35, 0.77);
   border: 2.7px solid #6b90e5;
-  background: none;
   border-radius: 10px;
   color: #dddddd;
   font-weight: bold;
@@ -95,10 +120,9 @@ body {
 
 .table {
 
-  background: rgb(255, 255, 255);
-  background: linear-gradient(158deg, rgba(255, 255, 255, 1) 9%, rgba(0, 74, 255, 0.5887488784576331) 100%);
+  background: rgba(35, 27, 54, 0.55);
   cursor: pointer;
-  color: #1f2530;
+  color: #2d8ec7;
   font-size: 23px;
   font-weight: bolder;
   font-family: "2  Nazanin", sans-serif;

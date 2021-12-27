@@ -6,7 +6,7 @@
       <td>id</td>
       <td>نام</td>
       <td>قیمت</td>
-      <td>نمره</td>
+      <td>درصد محبوبیت</td>
       <td>عملیات</td>
     </tr>
     <tr v-for="item in food" :key="item.id">
@@ -43,9 +43,15 @@ export default {
   methods: {
     async deletefood(id) {
       let result = await axios.delete("http://localhost:3000/food/" + id);
-      console.warn(result)
       if (result.status == 200) {
-        this.loadData()
+        this.loadData();
+        this.$swal({
+          position: 'top',
+          icon: 'success',
+          title: 'حذف شد',
+          showConfirmButton: false,
+          timer: 1500
+        });
       }
     },
     async loadData() {

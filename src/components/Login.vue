@@ -59,11 +59,20 @@ export default {
   color: #dddddd;
 
   margin: 0;
+  background-color: rgba(15, 26, 47, 0.66);
   border: 2px solid #96ff56;
   text-decoration: none;
   padding: 4px 100px 4px 100px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.page-img {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
 }
 </style>

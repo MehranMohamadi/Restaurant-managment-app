@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .nav {
-  background-color: rgba(124, 158, 232, 0.58);
+  background-color: rgb(23, 41, 77);
   overflow: hidden;
 
 }

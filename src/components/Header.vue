@@ -2,7 +2,7 @@
   <div class="nav">
     <router-link to="/">خانه</router-link>
     <router-link to="add">اضافه کردن</router-link>
-
+    <router-link to="orders">سفارش ها</router-link>
     <a href="#" v-on:click="logout">خروج</a>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .nav {
-  background-color: rgba(124, 158, 232, 0.58);
+  background-color: rgb(23, 41, 77);
   overflow: hidden;
 
 }

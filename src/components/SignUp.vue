@@ -37,7 +37,8 @@ export default {
       if (result.status == 201) {
 
         localStorage.setItem("user-info", JSON.stringify(result.data));
-        this.$router.push({name: 'Home2'})
+        this.$router.push({name: 'Home2'});
+
       }
     }
   },
@@ -53,7 +54,7 @@ export default {
 <style scoped>
 #Login-button {
   color: #dddddd;
-
+  background-color: rgba(15, 26, 47, 0.66);
   margin: 0;
   border: 2px solid #96ff56;
   text-decoration: none;
