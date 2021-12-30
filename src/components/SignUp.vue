@@ -5,6 +5,7 @@
     <input type="text" v-model="name" placeholder="نام خود را وارد کنید">
     <input type="text" v-model="email" placeholder="ایمیل خود را وارد کنید ">
     <input type="password" v-model="password" placeholder="پسورد خود را وارد کنید">
+    <input type="text" v-model="address" placeholder="آدرس خود را وارد کنید">
     <button v-on:click="signUp">ثبت نام</button>
     <P>
       <router-link to="/login" id="Login-button">قبلا ثبت نام کرده ام</router-link>
@@ -22,6 +23,7 @@ export default {
       name: '',
       email: '',
       password: '',
+      address:'',
       role: ''
     }
   },
@@ -31,6 +33,7 @@ export default {
         email: this.email,
         password: this.password,
         name: this.name,
+        address:this.address,
         role: 'User'
 
       })

@@ -16,7 +16,7 @@
       <td>{{ item.price }}</td>
       <td>{{ item.rate }}</td>
       <td>
-        <button class="order" v-on:click="order(this.name,item.name)">سفارش</button>
+        <button class="order" v-on:click="order(this.name,item.name,this.id,this.address)">سفارش</button>
       </td>
 
     </tr>
@@ -32,20 +32,20 @@ export default {
   data() {
     return {
       name: '',
-
       food: []
-
     }
   },
   components: {
     Header2
   },
   methods: {
-    async order(user,food) {
+    async order(user,food,userid,address) {
 
       const result = await axios.post("http://localhost:3000/order", {
         user: user,
-        food:food
+        food:food,
+        userid:userid,
+        address:address,
 
       });
       if (result.status == 201) {
@@ -65,12 +65,15 @@ export default {
     async loadData() {
       let user = localStorage.getItem('user-info');
       this.name = JSON.parse(user).name;
+      this.id=JSON.parse(user).id;
+      this.address=JSON.parse(user).address;
       if (!user) {
         this.$router.push({name: 'Signup'})
       }
       let result = await axios.get("http://localhost:3000/food");
 
       this.food = result.data;
+
     }
   },
   async mounted() {

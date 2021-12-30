@@ -24,6 +24,7 @@ export default {
   background-color: rgb(23, 41, 77);
   overflow: hidden;
 
+
 }
 
 .nav a {

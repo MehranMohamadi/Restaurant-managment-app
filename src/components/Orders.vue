@@ -3,14 +3,19 @@
   <h1 class="title">سفارشات</h1>
   <table border="1" class="table">
     <tr>
+      <td>userid</td>
       <td>سفارش دهنده</td>
       <td>سفارش</td>
+      <td>آدرس تحویل</td>
+
 
 
     </tr>
     <tr v-for="item in order" :key="item.user">
+      <td>{{item.userid}}</td>
       <td>{{ item.user }}</td>
       <td>{{ item.food }}</td>
+      <td>{{item.address}}</td>
 
     </tr>
   </table>
@@ -54,7 +59,7 @@ export default {
 <style scoped>
 table {
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
 
 }
 

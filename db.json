@@ -5,28 +5,16 @@
       "password": "mehran1378",
       "name": "مهران",
       "role": "admin",
+      "address": "مشهد،زیتون 15.پلاک 14.1",
       "id": 2
     },
     {
-      "email": "ali@gmail.com",
-      "password": "ali12345",
-      "name": "علی باقریه ",
+      "email": "ehsan2256@gmail.com",
+      "password": "ehsan1234",
+      "name": "احسان قلیخانی ",
+      "address": "مشهد،پیروزی 26،پلاک 12،طبقه دوم",
       "role": "User",
-      "id": 8
-    },
-    {
-      "email": "alinaseri@gmail.com",
-      "password": "1234567899",
-      "name": "علی ناصری",
-      "role": "User",
-      "id": 9
-    },
-    {
-      "email": "omid@gmail.com",
-      "password": "omid1234",
-      "name": "امید",
-      "role": "User",
-      "id": 13
+      "id": 3
     }
   ],
   "food": [
@@ -111,9 +99,25 @@
   ],
   "order": [
     {
-      "user": "امید",
-      "food": "چلو کباب برگ",
-      "id": "FrdxDHS"
+      "user": "احسان قلیخانی ",
+      "food": "چلو کباب بختیاری ",
+      "userid": 3,
+      "address": "مشهد،پیروزی 26،پلاک 12،طبقه دوم",
+      "id": "8b05nxu"
+    },
+    {
+      "user": "احسان قلیخانی ",
+      "food": "ماست یک نفره",
+      "userid": 3,
+      "address": "مشهد،پیروزی 26،پلاک 12،طبقه دوم",
+      "id": "aWWJA2T"
+    },
+    {
+      "user": "احسان قلیخانی ",
+      "food": "نوشابه قوطی ",
+      "userid": 3,
+      "address": "مشهد،پیروزی 26،پلاک 12،طبقه دوم",
+      "id": "16LjPMm"
     }
   ]
 }
