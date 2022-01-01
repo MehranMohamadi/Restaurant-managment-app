@@ -21,12 +21,15 @@
       </td>
 
     </tr>
+
   </table>
+
 </template>
 
 <script>
 import axios from "axios"
 import Header from "./Header";
+
 
 export default {
   name: "Home",
@@ -38,7 +41,8 @@ export default {
     }
   },
   components: {
-    Header
+    Header,
+
   },
   methods: {
     async deletefood(id) {

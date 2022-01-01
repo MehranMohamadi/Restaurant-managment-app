@@ -1,47 +1,45 @@
 <template>
-  <v-footer
-      dark
-      padless
-  >
-    <v-card
-        class="flex"
-        flat
-        tile
-    >
-      <v-card-title class="teal">
-        <strong class="subheading">Get connected with us on social networks!</strong>
-
-        <v-spacer></v-spacer>
-
-        <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            dark
-            icon
-        >
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
-        </v-btn>
-      </v-card-title>
-
-      <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-card-text>
-    </v-card>
-  </v-footer>
+  <div class="nav">
+    <router-link to="/">خانه</router-link>
+    <router-link to="add">اضافه کردن</router-link>
+    <router-link to="orders">سفارش ها</router-link>
+    <a href="#" v-on:click="logout">خروج</a>
+  </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
-    ],
-  }),
+  name: "Header",
+  methods: {
+    logout() {
+      localStorage.clear();
+      this.$router.push({name: "Login"})
+    }
+  }
 }
 </script>
+
+<style scoped>
+.nav {
+  background-color: rgb(23, 41, 77);
+  overflow: hidden;
+
+
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.nav a:hover {
+  background-color: #dddddd;
+  color: #333333;
+}
+</style>
